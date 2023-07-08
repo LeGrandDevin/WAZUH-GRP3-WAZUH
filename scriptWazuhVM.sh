@@ -7,6 +7,7 @@
 apt-get install openssh-server
 
 #permit Root login on ssh server
+sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/" /etc/ssh/sshd_config
 
 #Start SSH service
 systemctl start sshd
