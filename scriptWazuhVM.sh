@@ -18,9 +18,9 @@ sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/" /etc/ssh/sshd
 systemctl restart sshd
 
 #Create .ssh directory and set permissions
-mkdir .ssh
-chmod 700 .ssh/
+mkdir ~/.ssh
+chmod 700 ~/.ssh/
 
 #Create authorized_keys file and set permissions
-touch .ssh/authorized_keys
-chmod 644 .ssh/authorized_keys
+touch ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/authorized_keys
