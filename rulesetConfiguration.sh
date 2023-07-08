@@ -2,4 +2,4 @@
 read -p 'email: ' email
 python3 emailConf.py $email
 cp ossec.conf /var/ossec/etc/
-cp local_rules.xml /var/ossec/rules/
+cp local_rules.xml /var/ossec/ruleset/rules/
