@@ -6,6 +6,8 @@
 #Install openssh-server
 apt-get install openssh-server
 
+#permit Root login on ssh server
+
 #Start SSH service
 systemctl start sshd
 
